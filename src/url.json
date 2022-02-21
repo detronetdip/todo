@@ -1,8 +1,0 @@
-{
-    "routes":{
-        "userRegistraton":"http://localhost:5000/api/register/user",
-        "userLogin":"http://localhost:5000/api/verify/user",
-        "test":"http://localhost:5000/api/test",
-        "refreshToken":"http://localhost:5000/api/refresh"
-    }
-}
