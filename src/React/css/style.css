@@ -1,0 +1,173 @@
+@font-face {
+  font-family: Oxygen_b;
+  src: url(fonts/Oxygen-Bold.ttf);
+}
+
+@font-face {
+  font-family: Oxygen_l;
+  src: url(fonts/Oxygen-Light.ttf);
+}
+
+@font-face {
+  font-family: Oxygen_r;
+  src: url(fonts/Oxygen-Regular.ttf);
+}
+
+* {
+  font-family: "Oxygen_l";
+}
+
+input,
+select {
+  border: none;
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+input {
+  padding: 0.7rem;
+}
+
+input[type="button"] {
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 2px !important;
+  height: 2px !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(135, 135, 136, 0.349);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0a0a2c;
+}
+
+body::-webkit-scrollbar-corner {
+  border-radius: 7px;
+}
+
+.view-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.view-container .home {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.view-container .home .container {
+  width: 100%;
+  height: 100%;
+  max-width: 40rem;
+}
+
+.view-container .home .container .header {
+  padding: 2rem;
+  width: 100%;
+}
+
+.view-container .home .container .header h4 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.view-container .home .container .mainbody {
+  height: calc(100vh - 12rem);
+  overflow-y: auto;
+  padding: 0.1rem 2rem;
+}
+
+.view-container .home .container .mainbody .todoRow {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  background-color: #132f4c;
+  border: 1px solid #1e4976;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.view-container .home .container .mainbody .todoRow .todo {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.view-container .home .container .mainbody::-webkit-scrollbar {
+  display: none;
+}
+
+.view-container .home .container .addbox {
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.view-container .home .container .addbox .inpbx {
+  background-color: #0b2036;
+  padding: 1rem;
+  max-width: 97%;
+  min-width: 97%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.view-container .home .container .addbox .inpbx input {
+  border: 0;
+  outline: none;
+  width: 85%;
+  background-color: transparent;
+  color: #fff;
+}
+
+.view-container .home .container .addbox .inpbx button {
+  height: 3rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  background-color: #007fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.view-container .home .container .addbox .inpbx button .iconWrapper {
+  height: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
