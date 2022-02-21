@@ -54,9 +54,14 @@ ipcMain.on("start", (event, arg) => {
       event.reply("setstate", t.todos);
     }
   } else {
+    console.log("\n\ncreate init\n\n");
+    
     fs.writeFileSync(
       app.getPath("userData") + "/data.json",
       JSON.stringify({ todos: [] })
+    );
+    var t = JSON.parse(
+      fs.readFileSync(app.getPath("userData") + "/data.json").toString()
     );
     event.reply("setstate", t.todos);
   }
